@@ -24,8 +24,9 @@ public class MainActivity extends AppCompatActivity {
         Btn1.setOnClickListener(new Button.OnClickListener(){//创建监听
             public void onClick(View v) {
                 String strTmp = username + "点击Button01";
-                Ev1.getText().append("\r\n");
-                Ev1.getText().append(strTmp);
+                Ev1.setText(strTmp);
+                //Ev1.getText().append("\r\n");
+                //Ev1.getText().append(strTmp);
             }
 
         });
@@ -33,8 +34,9 @@ public class MainActivity extends AppCompatActivity {
         Btn2.setOnClickListener(new Button.OnClickListener(){//创建监听
             public void onClick(View v) {
                 String strTmp = username + "点击Button02";
-                Ev1.getText().append("\r\n");
-                Ev1.getText().append(strTmp);
+                Ev1.setText(strTmp);
+                //Ev1.getText().append("\r\n");
+                //Ev1.getText().append(strTmp);
             }
         });
 

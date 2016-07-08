@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
@@ -69,20 +70,41 @@
                 android:textAllCaps="true"
                 android:textSize="18sp" />
 
+            <ImageView
+                android:id="@+id/imageview1"
+                android:layout_width="match_parent"
+                android:layout_height="273dp"
+                android:src="@mipmap/thumb"
+                android:layout_row="5"
+                android:layout_column="0"
+                />
         </GridLayout>
 
     </FrameLayout>
 
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/thumb"
+        android:scaleType="fitCenter"
+        app:srcCompat="@mipmap/thumb"
+        android:cropToPadding="false"
+        android:adjustViewBounds="false"
+        android:layout_weight="0.49" />
+
     <TextView
-        android:layout_width="202dp"
+        android:layout_width="match_parent"
         android:layout_height="85dp"
         android:text="! \r\n How are you! \r\n Are you OK?"
         android:id="@+id/textView"
-        />
+        android:layout_weight="0.01"
+        android:textAlignment="center"
+        android:textSize="18sp" />
 
     <GridLayout
         android:layout_width="368dp"
-        android:layout_height="59dp">
+        android:layout_height="wrap_content">
 
         <Button
             android:text="Click Me 1 !"
@@ -108,11 +130,11 @@
     <EditText
         android:id="@+id/editText1"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_weight="0.96"
+        android:layout_height="wrap_content"
         android:textColor="?attr/colorPrimaryDark"
-        android:selectAllOnFocus="true">
-        <requestFocus />
+        android:singleLine="false"
+        android:selectAllOnFocus="true"
+        android:layout_weight="0.13">
     </EditText>
 
 </LinearLayout>
